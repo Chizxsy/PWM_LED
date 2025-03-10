@@ -6,8 +6,8 @@ from datetime import datetime
 import RPi.GPIO as GPIO #needed for hardware pwm, and cleanup
 
 home_dir = os.environ['HOME']
-pwm_pin = 13 # Choose a PWM pin
-frequency = 100 #PWM frequency
+pwm_pin = 13 # PWM pin is BCM 13
+frequency = 50000 #PWM frequency - To minimize this ripple, the suggested PWM signal frequency is 10 kHz or higher, such as 50 kHz
 cam = Picamera2()
 cam.configure(cam.create_still_configuration())
 
