@@ -4,7 +4,7 @@ import time
 
 
 pwm_pin = 12 # PWM0 is pin BCM 12
-pwm_freq = 50000 #PWM frequency - To minimize this ripple, the suggested PWM signal frequency is 10 kHz or higher, such as 50 kHz
+pwm_freq = 100 #PWM frequency - To minimize this ripple, the suggested PWM signal frequency is 10 kHz or higher, such as 50 kHz
 dutycycle = 60
 
 GPIO.setwarnings(False)			#disable warnings
