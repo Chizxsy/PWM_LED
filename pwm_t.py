@@ -19,7 +19,7 @@ pwm.start(0)
 
 def take_photo_with_pwm_pulse(filename, pulse_duration=0.1): #pulse duration in seconds
     """Takes a photo and pulses the PWM during the shutter period."""
-    pwm.ChangeDutyCycle(100) # Full duty cycle
+    pwm.ChangeDutyCycle(80) # Full duty cycle
     sleep(pulse_duration) #simulate shutter time
     cam.start_and_capture_file(filename)
     pwm.ChangeDutyCycle(0) # Turn off PWM
